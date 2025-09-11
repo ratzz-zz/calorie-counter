@@ -21,7 +21,7 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      vue: '@vue/runtime-dom'
+      vue: '@vue/runtime-dom',
     },
     extensions: ['.js', '.vue', '.json'],
   },

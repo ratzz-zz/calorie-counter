@@ -6,7 +6,9 @@
         <div class="card">
           <div class="card-body">
             <p class="text-center">Welcome to your Calorie Counter app!</p>
-            <p class="text-muted text-center">Start tracking your daily calorie intake.</p>
+            <p class="text-muted text-center">
+              Start tracking your daily calorie intake.
+            </p>
           </div>
         </div>
       </div>
@@ -21,7 +23,7 @@ export default {
     return {
       // Component data will go here
     }
-  }
+  },
 }
 </script>
 
