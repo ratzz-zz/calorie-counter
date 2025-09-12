@@ -1,6 +1,7 @@
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: './src/main.js',
@@ -18,6 +19,11 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({ template: './public/index.html' }),
     new VueLoaderPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'public/_redirects', to: '_redirects', toType: 'file' }
+      ]
+    }),
   ],
   resolve: {
     alias: {
